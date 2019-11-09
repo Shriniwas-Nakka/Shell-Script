@@ -2,19 +2,19 @@
 x=$(( RANDOM %3 ))
    if [ $x -eq 1 ];
       then
-      rate=20;
-      hour=8;
-      salary=$(( $rate * $hour ));
+      Rate=20;
+      Hour=8;
+      Salary=$(( $Rate * $Hour ));
       echo "Employee present"
-      echo "Monthly salary" $salary
+      echo "Monthly salary" $Salary
    elif [ $x -eq 2 ]
       then
       echo "parttime worker"
-      parttimerate=10;
-      hour=4
-      salary=$(( $parttimerate * $hour ));
-      echo $salary
+      partTimeRate=10;
+      Hour=4
+      Salary=$(( $partTimeRate * $Hour ));
+      echo $Salary
    else
-      salary=0;
+      Salary=0;
       echo "Employee absent!"
    fi
