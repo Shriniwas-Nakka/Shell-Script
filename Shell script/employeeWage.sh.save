@@ -1,0 +1,39 @@
+#!/bin/bash -x
+isPartTime=1;
+isFullTime=2;
+rate=20;
+x=$(( RANDOM %3 ))
+   if [ $x -eq $isFullTime ];
+   then
+      hour=8;
+      echo "Full Time"
+   elif [ $x -eq $isPartTime ]
+   then
+      echo "parttime worker"
+      hour=4;
+   else
+      hour=0;
+      echo "Employee absent" 
+   fi
+
+   salary=$(( $hour * $rate ));
+   echo $salary#!/bin/bash -x
+isPartTime=1;
+isFullTime=2;
+rate=20;
+randomcheck=$(( RANDOM %3 ))
+	if [ $randomCheck -eq $isFullTime ];
+	then
+		hour=8;
+		echo "Full Time"
+	elif [ $randomCheck -eq $isPartTime ]
+	then
+		echo "parttime worker"
+		hour=4;
+	else
+		hour=0;
+		echo "Employee absent" 
+	fi
+
+salary=$(( $hour * $rate ));
+echo $salary
