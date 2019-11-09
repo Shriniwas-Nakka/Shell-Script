@@ -16,5 +16,5 @@ x=$(( RANDOM %3 ))
       echo $salary
    else
       salary=0;
-      echo "Employee absent" 
+      echo "Employee absent!"
    fi
