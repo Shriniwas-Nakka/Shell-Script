@@ -1,6 +1,6 @@
 #!/bin/bash -x
-x=$(( RANDOM %3 ))
-   if [ $x -eq 1 ];
+empCheck=$(( RANDOM %3 ))
+   if [ $empCheck -eq 1 ];
       then
       Rate=20;
       Hour=8;
