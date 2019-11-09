@@ -1,13 +1,13 @@
 #!/bin/bash -x
-x=$(( RANDOM %3 ))
-   if [ $x -eq 1 ];
+empCheck=$(( RANDOM %3 ))
+   if [ $empCheck -eq 1 ];
       then
       rate=20;
       hour=8;
       salary=$(( $rate * $hour ));
       echo "Employee present"
       echo "Monthly salary" $salary
-   elif [ $x -eq 2 ]
+   elif [ $empCheck -eq 2 ]
       then
       echo "parttime worker"
       parttimerate=10;
